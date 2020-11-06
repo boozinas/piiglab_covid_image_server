@@ -1,6 +1,6 @@
 var express = require("express");
 const fs = require('fs');
-var app = express();
+const app = express();
 const rootFolder = './public/assets/img/COVID/';
 const relativeFolder = 'assets/img/COVID/';
 var categoryFolder = '';
@@ -36,7 +36,7 @@ function getImgs(list, folder) {
    return list; 
 }
    
-app.listen(8080,() => {
+app.listen(process.env.PORT || 3000,() => {
     console.log("Server runnning on port 8080");
 });
 
