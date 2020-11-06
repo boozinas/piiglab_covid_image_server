@@ -36,7 +36,7 @@ function getImgs(list, folder) {
    return list; 
 }
    
-app.listen(3001,() => {
+app.listen(8080,() => {
     console.log("Server runnning on port 3001");
 });
 
